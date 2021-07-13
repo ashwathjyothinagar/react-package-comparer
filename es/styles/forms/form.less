@@ -1,0 +1,207 @@
+@import './variables';
+
+form {
+	font-size: 18px;
+	.input-field-container label {
+		color: @label_color;
+		display: block;
+		font-weight: 300;
+		font-size: 24px;
+		margin-bottom: 8px;
+	}
+	.async-field-container {
+		position: relative;
+	}
+	button {
+		font-size: 18px;
+	}
+	textarea {
+		border-radius: 5px;
+		padding: 9px 10px;
+		font-size: 14px;
+		width: 100%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-shadow: inset @input_default_box_shadow;
+		border: solid 1px #ccc;
+		height: 80px;
+		&:disabled {
+			cursor: not-allowed;
+			background-color: @input_background_color_disabled;
+			color: @color_5;
+		}
+	}
+	select {
+		font-size: 18px;
+		width: 100%;
+		border: solid 2px #e9e9e9;
+		border-radius: 5px;
+	}
+	option {
+		font-size: 18px;
+	}
+	div.Select {
+		div.Select-control {
+			width: 100%;
+			border-radius: 5px;
+			border-width: 1px;
+			border-color: @input_border_color;
+			box-shadow: @input_default_box_shadow;
+		}
+		.Select-menu-outer {
+			font-weight: 300;
+			z-index: 3; // Twitter Bootstrap sets form inputs to z-index of 2. This ensures the select dropdown will appear over the form inputs.
+		}
+	}
+	div.input-group > span.input-group-btn > button {
+		height: 34px;
+	}
+	input.form-control {
+		height: 34px;
+		font-size: 14px;
+		display: block;
+		border-radius: 5px;
+		padding: 9px 10px;
+		width: 100%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-shadow: inset @input_default_box_shadow;
+		border: solid 1px #ccc;
+		&:disabled {
+			cursor: not-allowed;
+			background-color: @input_background_color_disabled;
+			color: @color_5;
+		}
+	}
+	.name-input {
+		margin-bottom: 40px;
+		input {
+			width: 600px;
+			max-width: 100%;
+		}
+	}
+	.form-error-message {
+		color: @error_color_primary;
+		position: absolute;
+		display: block;
+		float: left;
+		margin-top: 4px;
+	}
+	div.field-error {
+		.multi-select > .multi-select-box {
+			border-color: @error_color_primary;
+		}
+		input {
+			border-color: @error_color_primary;
+			&:focus {
+				.form-error-focus;
+			}
+		}
+		textarea {
+			border-color: @error_color_primary;
+			&:focus {
+				.form-error-focus;
+			}
+		}
+		div.Select.Select--single.is-focused {
+			div.Select-control {
+				.form-error-focus;
+			}
+		}
+		.search-box-group .input-group-addon {
+			background-color: #fff
+		}
+		div.Select {
+			div.Select-control {
+				border-color: @error_color_primary;
+				div.Select-input {
+					input {
+						&:focus {
+							-webkit-box-shadow: none;
+							box-shadow: none;
+						}
+					}
+				}
+			}
+		}
+		.fa {
+			color: @error_color_primary;
+		}
+		.input-group-btn {
+			> button {
+				background-color: lighten(@error_color_primary, 18%);
+				border-color: @error_color_primary;
+				&:active,
+				&:active:hover {
+					background-color: lighten(@error_color_primary, 10%)
+				}
+				.fa {
+					color: #fff;
+				}
+			}
+		}
+		.input-group-addon {
+			background-color: lighten(@error_color_primary, 18%);
+			border-color: @error_color_primary;
+			color: #fff;
+		}
+	}
+	.form-group {
+		margin-bottom: 15px;
+		label, .form-group-label {
+			display: block;
+			font-family: @font_family_1;
+			font-weight: 300;
+			line-height: 1.1;
+			color: @color_3;
+			margin-bottom: 10px;
+		}
+		.help-text {
+			margin-top: 5px;
+			font-size: 14px;
+			color: @color_4;
+		}
+	}
+	.form-row {
+		display: flex;
+		align-items: flex-start;
+		margin-top: 20px;
+		&:first-child {
+			margin-top: 0;
+		}
+		> div {
+			margin: 0 0 0 30px;
+			flex: 1 0;
+			&:first-child {
+				margin: 0;
+			}
+		}
+	}
+	.sub-header {
+		font-weight: 300;
+		font-size: 34px;
+	}
+	.input-field-container {
+		margin-top: 35px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	.required-message {
+		color: @required_color;
+		font-size: 18px;
+		margin-left: 10px;
+		font-weight: 300;
+	}
+	.notification-message-body {
+		white-space: pre-wrap;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-top: solid 1px #eeeeee;
+		border-bottom: solid 1px #eeeeee;
+	}
+}

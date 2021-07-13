@@ -1,0 +1,21 @@
+.section-header-container {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    h2 {
+        margin-bottom: 0;
+        padding-right: .5em;
+        white-space: nowrap;
+        color: #696969;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    @lineHight: 2px;
+    .section-header-line {
+        position: relative;
+        top: -(@lineHight * 2);
+        border-bottom: @lineHight solid #dedede;
+        min-width: 10%;
+        flex-basis: 100%;
+    }
+}

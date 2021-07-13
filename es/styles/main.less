@@ -1,0 +1,66 @@
+@import (less)'~rc-slider/assets/index.css';
+@import (less)'~rc-tooltip/assets/bootstrap.css';
+body {
+    margin: 0;
+    .ContentContainer {
+        // This is to hide the content container when we're an admin React app
+        padding: 0;
+    }
+}
+
+.imod-react-container {
+    font-family: 'Roboto', sans-serif;
+    @import 'variables';
+    @import 'mixins';
+    @import '~bootstrap/less/bootstrap';
+    @import (less) '~react-select/dist/react-select.css';
+    @import (less) '~react-datetime/css/react-datetime.css';
+    @import 'controls/index';
+    @import 'forms/index';
+    @import 'status/index';
+    @import 'modals/index';
+    @import "~@fortawesome/fontawesome-free/less/fontawesome";
+    @import "~@fortawesome/fontawesome-free/less/brands";
+    @import "~@fortawesome/fontawesome-free/less/regular";
+    @import "~@fortawesome/fontawesome-free/less/solid";
+    @import "~@fortawesome/fontawesome-free/less/v4-shims";
+    .hidden {
+        display: none;
+    }
+    input,
+    textarea,
+    button,
+    select {
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+    &,
+    div,
+    fieldset,
+    input,
+    label,
+    li,
+    p,
+    select,
+    option,
+    td,
+    textarea,
+    button,
+    .imod-admin-legacy-template button {
+        // This is because Encompass is stupid
+        font-family: @default-font-family;
+        font-size: @default-font-size;
+    }
+    a {
+        letter-spacing: 0 !important;
+    }
+    font-family: @default-font-family;
+    font-size: @default-font-size;
+    padding: 0;
+    margin: 0;
+    color: @default-text-color;
+    font-size: 18px;
+    background-color: #ececec;
+}

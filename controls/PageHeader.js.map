@@ -1,0 +1,1 @@
+{"version":3,"file":"PageHeader.js","sourceRoot":"","sources":["../../src/controls/PageHeader.tsx"],"names":[],"mappings":";;;;;AAAA,gDAAkC;AAClC,8DAAiC;AAOpB,QAAA,UAAU,GAAyB,UAAC,EAAoB;QAAlB,gBAAK,EAAE,wBAAS;IAC/D,OAAA;QACI,8BAAC,sBAAM,IAAC,KAAK,EAAE,KAAK,GAAI;QACxB,sCAAI,SAAS,EAAE,SAAS,IAAG,KAAK,CAAM,CACpC;AAHN,CAGM,CAAA;AAEV,kBAAU,CAAC,WAAW,GAAG,YAAY,CAAA"}

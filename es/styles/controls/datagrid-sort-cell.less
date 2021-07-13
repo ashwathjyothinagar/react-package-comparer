@@ -1,0 +1,52 @@
+.sort-cell {
+    vertical-align: middle;
+}
+
+.sort-buttons {
+    .fas;
+    font-size: 23px;
+    position: relative;
+    display: inline-block;
+    @wd: 23px;
+    width: @wd;
+    height: 33px;
+    span {
+        cursor: pointer;
+        color: #888;
+        position: absolute;
+        left: 0;
+        @ht: 14px;
+        height: @ht;
+        width: @wd;
+        &:hover {
+            color: #4a4a4a;
+        }
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: @ht;
+            width: @wd;
+            line-height: 12px;
+        }
+        &.disabled {
+            cursor: default;
+            &,
+            &:hover {
+                color: #ddd;
+            }
+        }
+    }
+    .sort-up {
+        top: 0;
+    }
+    .sort-up:before {
+        content: @fa-var-chevron-up;
+    }
+    .sort-down {
+        bottom: 0;
+    }
+    .sort-down:before {
+        content: @fa-var-chevron-down;
+    }
+}

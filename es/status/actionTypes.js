@@ -1,0 +1,9 @@
+export var SHOW_MESSAGE = 'react-components/status/SHOW_MESSAGE';
+export var HIDE_MESSAGE = 'react-components/status/HIDE_MESSAGE';
+export var START_BLOCKING_CALL = 'react-components/status/START_BLOCKING_CALL';
+export var STOP_BLOCKING_CALL = 'react-components/status/STOP_BLOCKING_CALL';
+export var INCREMENT_BLOCKING_COUNTER = 'react-components/status/INCREMENT_BLOCKING_COUNTER';
+export var START_SPINNER = 'react-components/status/START_SPINNER';
+export var STOP_SPINNER = 'react-components/status/END_SPINNER';
+export var ADD_SPINNER = 'react-components/status/ADD_SPINNER';
+//# sourceMappingURL=actionTypes.js.map

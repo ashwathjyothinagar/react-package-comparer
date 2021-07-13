@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>redX</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pattern-Library" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="000-txtModals" transform="translate(-384.000000, -608.000000)" fill="#D0011B">
+            <g id="error" transform="translate(320.000000, 529.000000)">
+                <g id="errorIcon" transform="translate(64.000000, 79.000000)">
+                    <polygon id="redX" points="34.350006 0.000176319314 20.0041835 14.3780565 5.65034663 0.000176319314 0.0322340232 5.64633941 14.3700421 20.0001763 0.000176319314 34.350006 5.65034663 40.0001763 20.0041835 25.6222961 34.3780565 39.9721258 40.0001763 34.350006 25.6222961 20.0001763 40.0001763 5.64633941"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

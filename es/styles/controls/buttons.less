@@ -1,0 +1,110 @@
+.imod-btn {
+    border: 0;
+    border-radius: 4px;
+    font-weight: 100;
+    line-height: 1.3333333;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 15px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+
+    &.imod-btn-small {
+        padding: 6px 12px;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        font-weight: 300;
+    }
+
+    &.imod-btn-large {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    &.imod-btn-xlarge {
+        padding: 10px 30px;
+        font-size: 30px;
+    }
+
+    &.imod-btn-basic {
+        background-color: #e6e6e6;
+
+        &:hover {
+            background-color: #dddddd;
+
+            &:disabled {
+                background-color: #e6e6e6;
+            }
+        }
+    }
+
+    &.imod-btn-primary {
+        background-color: #337ab7;
+        color: #fff;
+
+        &:hover {
+            background-color: #286090;
+
+            &:disabled {
+                background-color: #337ab7;
+            }
+        }
+    }
+
+    &.imod-btn-success {
+        background-color: #5cb85c;
+        color: #fff;
+
+        &:hover {
+            background-color: #449d44;
+
+            &:disabled {
+                background-color: #5cb85c;
+            }
+        }
+    }
+
+    &.imod-btn-danger {
+        background-color: #d9534f;
+        color: #fff;
+
+        &:hover {
+            background-color: #c9302c;
+
+            &:disabled {
+                background-color: #d9534f;
+            }
+        }
+    }
+
+    >a.imod-btn-export {
+        color: #fff;
+        padding: 7px 4px;
+        text-decoration: none;
+
+        &::after {
+            font-family: 'Font Awesome\ 5 Free';
+            font-style: normal;
+            font-weight: 900;
+            content: '\f56d';
+            margin-left: 5px;
+        }
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: .65;
+    }
+}
+
+a.imod-btn {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+button.color-picker-button.no-color {
+    border: 1px dashed #aaa;
+}

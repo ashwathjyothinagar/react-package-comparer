@@ -1,0 +1,142 @@
+.list-table-container label {
+    color: rgb(74, 74, 74);
+    display: block;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.list-table {
+    float: none;
+    padding-bottom: 15px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    a {
+        cursor: pointer;
+    }
+    .list-table-row {
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        &:not(:first-of-type) {
+            min-height: 80px;
+        }
+        .list-table-column {
+            padding: 10px;
+            display: flex;
+            flex: 2 0;
+            &:not(:first-of-type) {
+                align-items: center;
+                justify-content: center;
+            }
+            &.input-column {
+                .input-field-container {
+                    margin: auto;
+                    align-items: center;
+                    &.form-group {
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        .input-group {
+                            width: 110px;
+                        }
+                        &.field-error {
+                            .form-error-message {
+                                margin-top: 37px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.color-picker-column {
+                // This is a hack until we can clean up these fields a bit more
+                margin-top: 15px;
+                .form-error-message {
+                    margin-left: -35px;
+                }
+            }
+            &.checkbox-column {
+                flex: 0 90px;
+                text-align: center;
+                .checkbox {
+                    width: 100%;
+                }
+            }
+            &.menu-column {
+                flex: none;
+                width: 125px;
+                justify-content: center;
+            }
+            &.indicator-column {
+                flex: none;
+                width: 65px;
+                justify-content: center;
+            }
+            &.column-header {
+                color: #4d565c;
+            }
+            &.truncated {
+                div {
+                    display: block;
+                    width: 100%;
+                    word-wrap: break-word;
+                    word-break: break-word;
+                }
+            }
+            &.checkbox {
+                max-width: 90px;
+                padding: 0;
+                label {
+                    margin-left: 17px;
+                    margin-bottom: 6px;
+                }
+            }
+            &.row-label {
+                align-items: center;
+            }
+            &:first-child {
+                border-left: none;
+                padding-left: 15px;
+            }
+        }
+        &:nth-child(odd) {
+            background-color: #f5f5f5;
+        }
+        &:first-child {
+            background-color: #dbeaf6;
+        }
+    }
+    &.control-grid {
+        border: none;
+        .list-table-row {
+            border: none;
+            &:nth-child(even) {
+                background-color: #EFF6FF;
+            }
+            &:nth-child(odd) {
+                background-color: #F5F5F5;
+            }
+            &:first-child {
+                background-color: #DBEAF6;
+                color: #4d565c;
+            }
+            .list-table-column {
+                border: none;
+                font-weight: 300;
+                font-size: 18px;
+                &.column-header {
+                    font-weight: normal;
+                    font-size: 14px;
+                    color: inherit;
+                }
+            }
+        }
+    }
+}

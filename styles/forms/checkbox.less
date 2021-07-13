@@ -1,0 +1,58 @@
+@import 'variables';
+.checkbox {
+    input[type=checkbox] {
+        display: none;
+        font-size: 18px;
+        &~label {
+            cursor: default;
+            display: block;
+            font-size: 1.3em;
+            font-weight: 300;
+            color: black;
+            position: relative;
+            padding-left: 2em;
+            padding-bottom: .275em;
+            padding-top: .275em;
+            min-height: ~"calc(1.595em + 4px)";
+        }
+        &~div {
+            font-size: 1.3em;
+            @cb-size: 1.44em;
+            .fas;
+            position: absolute;
+            left: .1em;
+            top: .15em;
+            display: block;
+            border: solid 2px @input_border_color;
+            border-radius: 5px;
+            color: #7ED321;
+            line-height: 1.278em;
+            padding-left: .056em;
+            width: @cb-size;
+            height: @cb-size;
+            content: '';
+        }
+        &[disabled] {
+            &~* {
+                cursor: not-allowed;
+            }
+            &~div {
+                opacity: .6;
+                border-color: @input_border_color;
+                background-color: @input_background_color_disabled;
+            }
+        }
+        &:checked~div,
+        &[value="true"]~div {
+            &::before {
+                content: @fa-var-check;
+                font-family: 'Font Awesome\ 5 Free';
+                padding-left: .11em;
+            }
+        }
+    }
+
+    &__truncate {
+        display: block;
+    }
+}

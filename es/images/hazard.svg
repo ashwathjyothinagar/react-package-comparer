@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="34px" viewBox="0 0 40 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>hazard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pattern-Library" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="000-txtModals" transform="translate(-380.000000, -369.000000)" fill="#F6A623">
+            <g id="warning" transform="translate(320.000000, 293.000000)">
+                <g id="warningIcon" transform="translate(60.000000, 76.000000)">
+                    <path d="M38.9438495,30.6239214 L22.0243511,1.36336966 C20.9479248,-0.53594069 19.1538809,-0.40932 18.0774545,1.48626621 L1.15795611,30.5755076 C0.0593354232,32.4748179 0.961905956,33.584611 3.11475862,33.584611 L36.987047,33.584611 C39.1398997,33.584611 40.0202759,32.5232317 38.9438495,30.6239214 L38.9438495,30.6239214 Z M17.1436614,29.61468 L22.0412163,29.61468 L22.0412163,24.6839214 L17.1436614,24.6839214 L17.1436614,29.61468 Z M17.5908088,21.2577145 L21.7977053,21.2577145 L21.7977053,8.93081793 L17.5908088,8.93081793 L17.5908088,21.2577145 Z" id="hazard"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

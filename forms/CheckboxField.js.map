@@ -1,0 +1,1 @@
+{"version":3,"file":"CheckboxField.js","sourceRoot":"","sources":["../../src/forms/CheckboxField.tsx"],"names":[],"mappings":";;AAAA,mCAAsE;AACtE,mCAA+D;AAIlD,QAAA,aAAa,GAAG,2BAAkB,CAAC,sBAAmB,EAAE,UAAA,KAAK,IAAI,OAAA,CAAC;IAC3E,QAAQ,EAAE,gCAAuB,CAAC,KAAK,CAAC;IACxC,kBAAkB,EAAE,KAAK;CAC5B,CAAC,EAH4E,CAG5E,CAAC,CAAA"}

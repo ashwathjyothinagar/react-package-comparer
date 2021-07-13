@@ -1,0 +1,25 @@
+ul.admin-breadcrumb {
+    display: block;
+    font-size: .8em;
+    padding: 0;
+    max-width: 768px;
+    margin: 50px auto 20px auto;
+    &:before {
+        margin-right: -2px;
+        .fas;
+        content: @fa-var-map-marker;
+        color: green;
+        font-size: 28px;
+        display: inline-block;
+    }
+    &>li {
+        display: inline-block;
+        margin-left: 7px;
+        &:before {
+            content: '/';
+            color: #ccc;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+}

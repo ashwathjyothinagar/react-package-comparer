@@ -1,0 +1,95 @@
+@calendar-icon-background-color: #337ab7;
+@date-picker-border-color: #aeaeae;
+@date-picker-header-color: #f0f0f0;
+@date-picker-arrow-color: #050505;
+@date-picker-border-radius: 4px;
+.rdt-picker-triangle() {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 60px;
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
+
+.rdt {
+    table {
+        border-spacing: 0;
+    }
+    thead {
+        background-color: @date-picker-header-color;
+    }
+    .rdtPicker {
+        padding: 0;
+        width: 100%;
+        border: 1px solid @date-picker-border-color;
+        border-radius: @date-picker-border-radius;
+        margin-top: 10px;
+        &:before {
+            border: 10px solid @date-picker-border-color;
+            top: -20px;
+            .rdt-picker-triangle;
+        }
+        &:after {
+            border: 10px solid @date-picker-header-color;
+            top: -19px;
+            .rdt-picker-triangle;
+        }
+        tr {
+            &:first-child th {
+                border-bottom: none;
+                padding: @date-picker-border-radius 0;
+            }
+            th {
+                text-align: center;
+                border-bottom: 1px solid @date-picker-border-color;
+                &.rdtNext {
+                    border-top-right-radius: @date-picker-border-radius;
+                }
+                &.rdtPrev {
+                    border-top-left-radius: @date-picker-border-radius;
+                }
+                &.rdtSwitch {
+                    border-radius: @date-picker-border-radius 0px 0px @date-picker-border-radius;
+                    font-size: 16px;
+                    letter-spacing: 0.6px;
+                    color: @date-picker-arrow-color;
+                }
+                &.dow {
+                    font-weight: normal;
+                    color: @date-picker-arrow-color;
+                }
+                td.rdtTimeToggle {
+                    border-bottom-left-radius: @date-picker-border-radius;
+                    border-bottom-right-radius: @date-picker-border-radius;
+                }
+            }
+            td {
+                height: 38px;
+                &.rdtDay {
+                    &.rdtActive,
+                    &:hover {
+                        border-radius: @date-picker-border-radius;
+                    }
+                    &.rdtActive {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.date-picker-container {
+    width: 100%;
+    position: relative;
+    input {
+        width: 100%;
+        &:placeholder-shown,
+        &::placeholder {
+            color: #999;
+        }
+    }
+}

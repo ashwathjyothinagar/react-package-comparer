@@ -1,0 +1,1 @@
+{"version":3,"file":"MultiSelectorField.js","sourceRoot":"","sources":["../../src/forms/MultiSelectorField.tsx"],"names":[],"mappings":";;AAAA,mCAAsE;AACtE,mCAAyE;AACzE,mCAAqG;AAA1B,4BAAA,QAAQ,CAAA;AAEtE,QAAA,kBAAkB,GAAG,2BAAkB,CAAC,2BAAwB,EAAE,UAAA,KAAK,IAAI,OAAA,CAAC;IACrF,QAAQ,EAAE,gCAAuB,CAAC,KAAK,CAAC;CAC3C,CAAC,EAFsF,CAEtF,CAAC,CAAA"}

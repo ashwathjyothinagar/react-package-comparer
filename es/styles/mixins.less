@@ -1,0 +1,42 @@
+@import '~@fortawesome/fontawesome-free/less/fontawesome';
+@import '~@fortawesome/fontawesome-free/less/regular';
+@import '~@fortawesome/fontawesome-free/less/solid';
+
+.font-awesome-icon(@code, @style: normal) {
+    .font-awesome-icon-style(@code, @style)
+}
+
+.font-awesome-icon(@code, solid) {
+	// The font weight of 900 is required to indicate to FontAwesome to use the solid version of the icon
+	.font-awesome-icon-style(@code, 900)
+}
+
+.font-awesome-icon-style(@code, @fontWeight) {
+	&::before {
+        font-family: 'Font Awesome\ 5 Free';
+		font-style: normal;
+		font-weight: @fontWeight;
+        content: @code;
+    }
+}
+
+.no-select() {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                           not supported by any browser */
+}
+
+.form-error-focus() {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px @error_color_secondary;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px @error_color_secondary;
+}

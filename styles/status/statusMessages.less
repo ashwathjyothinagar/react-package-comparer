@@ -1,0 +1,63 @@
+.imod-react-container {
+	.status-container,
+	.toast-container {
+		.status-messages {
+			margin-top: -30px;
+			min-height: 30px;			
+		}
+		
+		.status-messages > .callout {
+			&.status-message-enter, &.status-message-exit.status-message-exit-active {
+				opacity: 0;
+				margin-top: 0;
+				margin-bottom: 0;
+				max-height: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+
+			&.status-message-exit, &.status-message-enter.status-message-enter-active {
+				opacity: 1;
+				margin-top: 30px;
+				margin-bottom: 30px;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				max-height: 94px;
+			}
+
+			@time-factor: 1;
+			@spacing-time: @time-factor * 100ms;
+			@fade-time: @time-factor * 150ms;
+
+			&.status-message-enter.status-message-enter-active {
+				transition:
+					max-height @spacing-time ease-in,
+					margin-top @spacing-time ease-in,
+					margin-bottom @spacing-time ease-in,
+					padding-top @spacing-time ease-in,
+					padding-bottom @spacing-time ease-in,
+					opacity @fade-time ease-in @spacing-time;
+			}
+
+			&.status-message-exit.status-message-exit-active {
+				transition:
+					max-height @spacing-time ease-out @fade-time,
+					margin-top @spacing-time ease-out @fade-time,
+					margin-bottom @spacing-time ease-out @fade-time,
+					padding-top @spacing-time ease-out @fade-time,
+					padding-bottom @spacing-time ease-out @fade-time,
+					opacity @fade-time ease-out;
+			}
+		}
+	}
+	.toast-container {
+		.status-messages {
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			max-width: 25%;			
+			min-width: 15%;
+			margin-bottom: 10px;
+		}
+	}
+}

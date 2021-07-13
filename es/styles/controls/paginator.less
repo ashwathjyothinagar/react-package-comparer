@@ -1,0 +1,65 @@
+/* PAGING */
+
+.imod-paginator-summary {
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.imod-paginator {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    display: inline-block;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin: 0 auto;
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            &:first-child {
+                margin-right: 25px;
+            }
+            &:last-child {
+                margin-left: 25px;
+            }
+            &.selected a {
+                background-color: #666;
+                color: #fff;
+                &:hover {
+                    background-color: #999;
+                }
+            }
+            a {
+                border-radius: 20px;
+                color: #666;
+                display: block;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                transition: none;
+                cursor: pointer;
+                &,
+                &:link,
+                &:active,
+                &:visited {
+                    outline: none;
+                }
+                i {
+                    line-height: 30px;
+                    vertical-align: middle;
+                }
+                &:hover {
+                    transition: none;
+                    color: #fff;
+                    text-decoration: none;
+                    background-color: #999;
+                }
+            }
+        }
+    }
+}

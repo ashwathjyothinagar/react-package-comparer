@@ -1,0 +1,110 @@
+.form-group.input-field-container {
+  &.field-error{    
+    .two-state-checkbox-list, .two-state-checkbox {
+      [role="checkbox"] {
+        &::before{
+          outline: none;
+          border-color: @error_color_primary;
+        }
+        &:focus{
+          &::before{
+            outline: none;
+            border-color: #66afe9;
+            filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.075)) drop-shadow(0 0 3px rgba(206, 132,	131, 0.6));
+          }
+        }
+      } 
+      color: @error_color_primary;
+    }
+  }
+
+  .two-state-checkbox-list, .two-state-checkbox {
+    outline: none;
+    list-style: none;
+    margin: 0 0 0 8px;
+    padding: 0;
+    cursor: default;
+
+    &+.form-error-message {
+      margin-top: 0;
+    }
+
+    [role="checkbox"] {
+      @outer-size: 26px;
+      display: inline-block;
+      position: relative;
+      font-size: 1.3em;
+      font-family: @font_family_1;
+      font-weight: 300;
+      padding-left: @outer-size + 6px;
+      cursor: default;
+      margin: 8px 0;
+
+      &:focus {
+        outline: none;
+        &::before{
+          outline: none;
+          border-color: #66afe9;
+          filter: drop-shadow(0px 0px 2px rgba(102, 175, 233, 0.6));
+        }
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 7px;
+        transform: translate(-50%, -50%);
+        content: '';
+      }
+
+      &::before {
+        width: @outer-size;
+        height: @outer-size;
+        border: 1px solid @input_border_color;
+        border-radius: .2em;
+        background-color: #fff;
+        box-shadow: inset @input_default_box_shadow;
+      }
+      &[aria-disabled="true"] {
+        cursor: not-allowed;
+        &:after{
+          opacity: .6;
+        }
+        &:not(:focus){
+          &:before{
+            border-color: @input_border_color;
+          }
+        }
+        &:before {
+          background-color: @input_background_color_disabled;
+          opacity: .6;
+        }
+      }
+      &[aria-checked="true"] {
+        &::after {
+          display: block;
+          width: .55em;
+          height: .80em;
+          border: solid rgb(135, 208, 104);
+          border-width: 0 .25em .25em 0;
+          transform: translateY(-65%) translateX(-50%) rotate(45deg);
+        }
+        &[aria-disabled="true"] {
+          &:after{
+            opacity: .6;
+          }
+          &:before {
+            border-color: @input_border_color;
+            background-color: @input_background_color_disabled;
+            opacity: .6;
+          }
+        }
+      }
+    }
+  }
+  legend.form-group-label{
+    border-bottom: none;
+    font-size: 1.7em;
+  }
+}

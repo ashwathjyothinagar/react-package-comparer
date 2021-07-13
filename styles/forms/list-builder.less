@@ -1,0 +1,31 @@
+.list-builder {
+    &[aria-disabled="true"] {
+        cursor: not-allowed;
+        button {
+            cursor: not-allowed;
+        }
+    }
+    &.field-error {
+        .list-items-container {
+            border-color: @error_color_primary;
+        }
+        .text-add-field.input-group {
+            input {
+                border-color: #ccc;
+                &:focus {
+                    border-color: #66afe9;
+                    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+                }
+            }
+            button {
+                background-color: #337ab7;
+                border-color: #2e6da4;
+                &:focus {
+                    color: #fff;
+                    background-color: #286090;
+                    border-color: #122b40;
+                }
+            }
+        }
+    }
+}

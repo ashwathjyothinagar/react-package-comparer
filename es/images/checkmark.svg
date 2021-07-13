@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="32px" viewBox="0 0 40 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>checkMark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pattern-Library" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="000-txtModals" transform="translate(-387.000000, -136.000000)" fill="#7ED321">
+            <g id="success" transform="translate(320.000000, 53.000000)">
+                <g id="successIcon" transform="translate(67.000000, 83.000000)">
+                    <polygon id="checkMark" points="34.0010292 -3.21288889e-13 12.2846941 21.7384233 5.19439716 14.6223568 0 19.8130726 12.0711753 31.8768852 12.2846941 31.6560037 12.5092569 31.8768852 39.1880636 5.18703444"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
